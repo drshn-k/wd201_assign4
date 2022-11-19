@@ -1,7 +1,8 @@
 let todoList = require("../todo");
-const {test, describe, expect, beforeAll} = require('@jest/globals');
+const { test, describe, expect, beforeAll } = require("@jest/globals");
 
 const { all, markAsComplete, add, overdue, dueToday, dueLater } = todoList();
+
 describe("Todo List Test Suite", () => {
   beforeAll(() => {
     const today = new Date();
